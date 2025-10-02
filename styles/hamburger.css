@@ -1,0 +1,46 @@
+/* Styles for the hamburger menu */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    color: #262626;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+    .div-style-26ad796c {
+        display: none; /* Hide the original nav menu */
+        position: absolute;
+        top: 100px; /* Position below the header */
+        left: 0;
+        right: 0;
+        background: #f7f7f8;
+        border-bottom: 1px solid #f1f1f3;
+        z-index: 99;
+    }
+
+    .div-style-26ad796c.active {
+        display: block; /* Show when active */
+    }
+
+    .div-style-26ad796c ul {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .div-style-26ad796c li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .div-style-26ad796c a {
+        padding: 15px;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger icon */
+    }
+}
